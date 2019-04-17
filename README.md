@@ -2,4 +2,4 @@
 - **[TR]** Kişisel Web Sitesi
 - **[EN]** Personal Web Site
 
-- :panda_face:
+:panda_face:
