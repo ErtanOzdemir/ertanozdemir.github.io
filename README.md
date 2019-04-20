@@ -1,3 +1,3 @@
-#ertanozdemir.github.io 🐼
-Kişisel Site
-Personal Web Page
+# ertanozdemir.github.io 🐼
+- Kişisel Site
+- Personal Web Page
