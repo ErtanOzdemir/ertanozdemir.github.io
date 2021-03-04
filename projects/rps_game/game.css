@@ -1,0 +1,54 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #aa076b, #61045f);
+}
+
+#app button {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    border-style: solid;
+}
+
+#app button:hover {
+    background-color: white;
+    color: black;
+}
+
+button p {
+    padding: auto;
+    margin: 0.5em;
+    font-size: 2vw;
+}
+
+#handShapes {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.imageLeft {
+    transform: rotate(90deg) scaleX(-1);
+    width: 14%;
+}
+
+.imageRight {
+    transform: rotate(270deg) scaleX(1);
+    width: 14%;
+}
+
+.imageMiddle {
+    width: 12%;
+    padding-right: 12%;
+    padding-left: 12%;
+    padding-bottom: 8%;
+}

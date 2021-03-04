@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <div id="scoreTable" style="padding-top: 1%">
+            <center style="font-size: 3vw; color: white;font-family: 'Fredoka One', cursive;">
+                <span>You: {{scores.yourScore}} </span> | <span>Computer: {{scores.computerScore}}</span> | <span>Draw: {{scores.draw}}</span>
+            </center>
+        </div>
+
+        <div id="handShapes">
+            <center>
+                <img class="imageLeft" v-bind:src="imageNumbers.userImage" alt="scissors">
+                <img class="imageMiddle" src="assets/unnamed.png" alt="versus">
+                <img class="imageRight" v-bind:src="imageNumbers.computerImage" alt="rock">
+            </center>
+
+
+        </div>
+
+        <button v-on:click="getRandom"><p> Tap to Button </p></button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
