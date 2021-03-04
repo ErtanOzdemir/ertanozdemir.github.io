@@ -12,32 +12,50 @@ new Vue({
             user: 0,
             computer: 0,
 
-
         }
-
-
 
     },
     methods: {
-        getRandom: function() {
-
-            this.imageNumbers.user = Math.floor(Math.random() * 3);
+        getPaper: function() {
+            this.imageNumbers.user = 2;
             this.imageNumbers.computer = Math.floor(Math.random() * 3);
+
             this.imageNumbers.userImage = "assets/" + this.imageNumbers.user + ".png";
             this.imageNumbers.computerImage = "assets/" + this.imageNumbers.computer + ".png";
 
-            if ((this.imageNumbers.computer == 0 && this.imageNumbers.user == 0) || (this.imageNumbers.computer == 1 && this.imageNumbers.user == 1) || (this.imageNumbers.computer == 2 && this.imageNumbers.user == 2)) {
-                this.scores.draw++;
-            } else if (this.imageNumbers.computer == 0 && this.imageNumbers.user == 1) this.scores.yourScore++;
-            else if (this.imageNumbers.computer == 1 && this.imageNumbers.user == 0) this.scores.computerScore++;
+            if ((this.imageNumbers.computer == 2 && this.imageNumbers.user == 2)) this.scores.draw++;
             else if (this.imageNumbers.computer == 1 && this.imageNumbers.user == 2) this.scores.yourScore++;
-            else if (this.imageNumbers.computer == 2 && this.imageNumbers.user == 1) this.scores.computerScore++;
-            else if (this.imageNumbers.computer == 2 && this.imageNumbers.user == 0) this.scores.yourScore++;
             else if (this.imageNumbers.computer == 0 && this.imageNumbers.user == 2) this.scores.computerScore++;
 
 
 
+        },
+
+        getScissors: function() {
+            this.imageNumbers.user = 0;
+            this.imageNumbers.computer = Math.floor(Math.random() * 3);
+
+            this.imageNumbers.userImage = "assets/" + this.imageNumbers.user + ".png";
+            this.imageNumbers.computerImage = "assets/" + this.imageNumbers.computer + ".png";
+
+            if ((this.imageNumbers.computer == 0 && this.imageNumbers.user == 0)) this.scores.draw++;
+            else if (this.imageNumbers.computer == 1 && this.imageNumbers.user == 0) this.scores.computerScore++;
+            else if (this.imageNumbers.computer == 2 && this.imageNumbers.user == 0) this.scores.yourScore++;
+
+        },
+        getRock: function() {
+            this.imageNumbers.user = 1;
+            this.imageNumbers.computer = Math.floor(Math.random() * 3);
+
+            this.imageNumbers.userImage = "assets/" + this.imageNumbers.user + ".png";
+            this.imageNumbers.computerImage = "assets/" + this.imageNumbers.computer + ".png";
+
+            if ((this.imageNumbers.computer == 1 && this.imageNumbers.user == 1)) this.scores.draw++;
+            else if (this.imageNumbers.computer == 2 && this.imageNumbers.user == 1) this.scores.computerScore++;
+            else if (this.imageNumbers.computer == 0 && this.imageNumbers.user == 1) this.scores.yourScore++;
+
         }
+
     },
 
 })

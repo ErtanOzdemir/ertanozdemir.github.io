@@ -14,13 +14,14 @@ body {
     text-decoration: none;
     cursor: pointer;
     margin: 0 auto;
-    display: block;
+    display: inline;
     color: white;
     background-color: rgba(0, 0, 0, .5);
     border-style: solid;
 }
 
 #app button:hover {
+    text-decoration: none;
     background-color: white;
     color: black;
 }
