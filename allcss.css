@@ -172,6 +172,7 @@ hr {
 .card {
     background-color: white;
     padding: 4% 4% 4% 4%;
+    height: 85%;
     border: solid;
     text-align: center;
     border-color: #276678;
