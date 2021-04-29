@@ -25,8 +25,8 @@ nav ul li a:hover {
     color: orangered;
 }
 
-nav ul :nth-child(4) {
-    padding-left: 15%;
+nav ul :nth-child(5) {
+    padding-left: 10%;
 }
 
 #hello {
@@ -150,4 +150,42 @@ hr {
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    column-gap: 5%;
+    row-gap: 5%;
+}
+
+.container a {
+    text-decoration: none;
+    color: #276678;
+}
+
+.card {
+    background-color: white;
+    padding: 4% 4% 4% 4%;
+    border: solid;
+    text-align: center;
+    border-color: #276678;
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.card:hover {
+    border-color: orangered;
+    color: orangered;
+    font-size: 17px;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
