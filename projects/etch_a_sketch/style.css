@@ -1,0 +1,19 @@
+header {
+    font-size: 3vw;
+    margin-top: 2.5%;
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+}
+
+.button-area {
+    margin: auto;
+    width: 25%;
+}
+
+.container {
+    margin: auto;
+    margin-top: 4%;
+    height: 500px;
+    width: 500px;
+    border: solid;
+}
