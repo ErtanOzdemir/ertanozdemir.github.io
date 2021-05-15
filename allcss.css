@@ -190,3 +190,51 @@ hr {
     font-size: 17px;
     box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media screen and (max-width: 445px) {
+    #hello {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0%;
+    }
+    #hello img {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hand {
+        display: none;
+    }
+    #hello h2 {
+        font-size: 45px;
+    }
+    #hello p {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+    }
+    nav ul li {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5vw;
+        display: inline;
+        padding-left: 30px;
+    }
+    ul:nth-child(1) {
+        padding-left: 0px;
+        margin-left: auto;
+    }
+    #socialMediaIcons {
+        width: 19%;
+        padding-left: 1%;
+    }
+    #socialMediatext {
+        margin-top: 5%;
+        margin-bottom: 0.1%;
+        text-align: center;
+        padding-top: 6%;
+        font-size: 8vw;
+        font-family: 'Indie Flower', cursive;
+    }
+}
